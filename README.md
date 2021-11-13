@@ -1,22 +1,30 @@
-# Next.js + Jest
+# Next.js scalffolding with JEST, Tailwind, and Storybook
 
-This example shows how to configure Jest to work with Next.js.
+Bootstraped using [Create Next App](https://github.com/vercel/next.js/tree/canary/packages/create-next-app#readme)!
 
-This includes Next.js' built-in support for Global CSS, CSS Modules, and TypeScript!
+## Stacks
 
-## How to Use
+- Next.js
+- Tailwind
+- JEST
+- Storybook
 
-Quickly get started using [Create Next App](https://github.com/vercel/next.js/tree/canary/packages/create-next-app#readme)!
+## Scripts
 
-In your terminal, run the following command:
-
+### Next scripts
 ```bash
-npx create-next-app --example with-jest with-jest-app
-# or
-yarn create next-app --example with-jest with-jest-app
+next dev
+next build
+next start
 ```
 
-## Run Jest Tests
+### Run Storybook
+
+```bash
+npm run storybook
+```
+
+### Run Tests
 
 ```bash
 npm test
