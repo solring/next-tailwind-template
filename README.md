@@ -1,4 +1,4 @@
-# Next.js scalffolding with JEST, Tailwind, and Storybook
+# Next.js scaffolding with JEST, Tailwind, and Storybook
 
 Bootstraped using [Create Next App](https://github.com/vercel/next.js/tree/canary/packages/create-next-app#readme)!
 
