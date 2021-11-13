@@ -1,46 +1,55 @@
 import Head from 'next/head'
 
-const box = "p-4 rounded-sm text-gray-700 border-4 border-blue-300"
+import Icon from '../components/Icon'
+import Card from '../components/Card'
 
 const Home = () => (
-  <div className="mx-auto container">
+  <div className="mx-auto container p-4">
     <Head>
       <title>Create Next App</title>
       <link rel="icon" href="/favicon.ico" />
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     </Head>
 
     <main>
-      <h1 className="text-gray-700 text-4xl">
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1>
 
-      <p className="text-green-400">
-        Get started by editing <code>pages/index.js</code>
-      </p>
-
-      <div className="grid grid-cols-2 gap-3">
-        <a href="https://nextjs.org/docs" className={box}>
-          <h3>Documentation &rarr;</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a href="https://nextjs.org/learn" className={box}>
-          <h3>Learn &rarr;</h3>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
-        </a>
-
-        <a
-          href="https://github.com/vercel/next.js/tree/master/examples"
-          className={box}
+      <div className="grid grid-cols-1 md:grid-cols-2">
+        <Card
+          icon={
+            <Icon name="shortcut" className="text-white"/>
+          }
+          title="Documentation"
+          link="https://nextjs.org/docs"
         >
-          <h3>Examples &rarr;</h3>
+          <p>Find in-depth information about Next.js features and API.</p>
+        </Card>
+        <Card
+          icon={
+            <Icon name="shortcut" className="text-white"/>
+          }
+          title="Learn"
+          link="https://nextjs.org/learn"
+        >
+          <p>Learn about Next.js in an interactive course with quizzes!</p>
+        </Card>
+        <Card
+          icon={
+            <Icon name="shortcut" className="text-white"/>
+          }
+          title="Examples"
+          link="https://github.com/vercel/next.js/tree/master/examples"
+        >
           <p>Discover and deploy boilerplate example Next.js projects.</p>
-        </a>
-
-        <a href="https://vercel.com/new" className={box}>
-          <h3>Deploy &rarr;</h3>
+        </Card>
+        <Card
+          icon={
+            <Icon name="shortcut" className="text-white"/>
+          }
+          title="Deploy"
+          link="https://nextjs.org/new"
+        >
           <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
-        </a>
+        </Card>
       </div>
     </main>
   </div>
